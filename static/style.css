@@ -1,0 +1,566 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  color: white;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6); /* warna transparan seperti halaman utama */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-weight: 600;
+  font-size: 20px;
+  color: #fff;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #ff4b4b;
+}
+
+/* Hero Section (default) */
+.hero {
+  height: 100vh;
+  width: 100%;
+  background: url("WhatsApp Image 2025-10-13 at 17.04.30.jpeg") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.4);
+}
+
+.hero .content {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #fff;
+}
+
+/* 🔹 Hero Section Beda per Halaman */
+body.home-page .hero {
+  background-image: url("WhatsApp Image 2025-10-13 at 17.04.30.jpeg"); /* ganti sesuai file kamu */
+}
+
+body.pendahuluan-page .hero {
+  background-image: url("WhatsApp Image 2025-10-13 at 17.04.21.jpeg");
+}
+
+body.biodata-page .hero {
+  background-image: url("WhatsApp Image 2025-10-13 at 17.05.20.jpeg");
+}
+
+body.kompetensi-page .hero {
+  background-image: url("WhatsApp Image 2025-10-13 at 17.05.29.jpeg");
+}
+
+body.kesan-page .hero {
+  background-image: url("WhatsApp Image 2025-10-14 at 13.26.05.jpeg");
+}
+
+body.dokumentasi-page .hero {
+  background-image: url("img/dokumentasi-bg.jpg");
+}
+
+body.profil-page .hero {
+  background-image: url("Landing_Page.jpeg");
+}
+
+/* ====== Biodata Siswa =======*/
+:root {
+  --main-color: #fa9bc8;
+  --second-color: #9e7373;
+  --bg-color: #fff;
+  --text-color: #444;
+}
+
+/* Heading biodata */
+.heading {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.heading h1 {
+  font-size: 2rem;
+  color: var(--main-color);
+  letter-spacing: 1px;
+}
+
+/* Container utama */
+.biodata-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 30px;
+}
+
+/* Gambar biodata */
+.biodata-img {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.biodata-img img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Teks biodata */
+.biodata-text {
+  flex: 1 1 55%;
+  color: var(--text-color);
+  line-height: 1.7;
+}
+
+.biodata-text h2 {
+  font-size: 1.8rem;
+  color: var(--main-color);
+  margin-bottom: 15px;
+}
+
+.biodata-text p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* Responsif buat HP */
+@media (max-width: 768px) {
+  .biodata-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .biodata-img img {
+    max-width: 250px;
+  }
+
+  .biodata-text {
+    text-align: center;
+  }
+}
+
+/* Footer Bar (nama industri di bawah warna pink) */
+.footer-bar {
+  background-color: #f3c2d9; /* warna pink pastel */
+  color: #5b1447; /* ungu tua */
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 15px;
+  font-weight: 500;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ======= Pendahuluan ======= */
+.pendahuluan {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: var(--bg-color);
+}
+
+.pendahuluan-container {
+  color: var(--text-color);
+  line-height: 1.8;
+  font-size: 1.05rem;
+  text-align: justify;
+}
+
+.latarbelakang-text h2{
+  color: #ff5ea3;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+/* ===== TUJUAN & MANFAAT ===== */
+.tujuan-manfaat-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+/* --- TUJUAN --- */
+.tujuan-section {
+  flex: 1;
+  min-width: 400px;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.tujuan-text h2 {
+  color: #ff5ea3;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.tujuan-text ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  line-height: 1.8;
+  color: #222; /* warna teks dibenerin jadi gelap */
+}
+
+.tujuan-img {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.tujuan-img img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* --- MANFAAT --- */
+.manfaat-section {
+  flex: 1;
+  min-width: 400px;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.manfaat-section h2 {
+  color: #ff5ea3;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.manfaat-section p {
+  line-height: 1.8;
+  text-align: justify;
+  font-size: 1.05rem;
+  color: #222;
+}
+
+.manfaat-img {
+  text-align: center;
+  margin-top: 41px;
+}
+
+.manfaat-img img {
+  width: 100%;
+  max-width: 530px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .tujuan-manfaat-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .tujuan-section, .manfaat-section {
+    padding: 20px;
+  }
+
+  .tujuan-img img,
+  .manfaat-img img {
+    max-width: 100%;
+  }
+
+  .pendahuluan {
+    padding: 25px;
+  }
+
+  .pendahuluan-container {
+    font-size: 1rem;
+  }
+}
+
+/* ======= Profil BOE ======= */
+.profilBOE-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 30px;
+}
+
+.profilBOE-img {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.profilBOE-img img {
+  width: 130%; 
+  max-width: 420px; 
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.profilBOE-text {
+  flex: 1 1 55%;
+  color: var(--text-color);
+  line-height: 1.7;
+}
+
+.profilBOE-text h2 {
+  font-size: 1.8rem;
+  color: #fc74b4;
+  margin-bottom: 15px;
+}
+
+.profilBOE-text p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* ======= Responsif ======= */
+@media (max-width: 768px) {
+  .profilBOE-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profilBOE-img img {
+    max-width: 250px;
+  }
+
+  .profilBOE-text {
+    text-align: center;
+  }
+}
+
+/* ======= Footer ======= */
+.footer-bar {
+  background-color: #f3c2d9;
+  color: #5b1447;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 15px;
+  font-weight: 500;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* ======= VISI MISI SECTION ======= */
+.visi-misi-section {
+  max-width: 1100px;
+  margin: 100px auto;
+  padding: 40px;
+  line-height: 1.8;
+  background-color: #ffffff; /* latar belakang putih */
+}
+
+.judul-visi-misi {
+  text-align: center;
+  font-size: 2rem;
+  color: #d14a8a;
+  font-weight: 700;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.judul-visi-misi::after {
+  content: "";
+  width: 80px;
+  height: 3px;
+  background-color: #fc74b4;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 3px;
+}
+
+/* container kanan–kiri */
+.visi-misi-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.visi-misi-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* biar tinggi otomatis sama */
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.visi, .misi {
+  flex: 1 1 45%;
+  background-color: #ffe6f26b; /* warna pink lembut */
+  color: #000000;
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 250px;
+  box-sizing: border-box;
+}
+
+.visi h2, .misi h2, .tujuan h2 {
+  text-align: center;
+  align-items: center;
+  color: #fc74b4;
+  margin-bottom: 15px;
+}
+
+/* Tujuan di bawah tengah */
+.tujuan {
+  margin-top: 60px;
+  background-color: #ffe6f26b; /* box pink lembut */
+  color: #000000;
+  padding: 25px 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto; /* biar di tengah */
+}
+
+.tujuan ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* ======= Responsif ======= */
+@media (max-width: 768px) {
+  .visi-misi-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .visi, .misi {
+    flex: 1 1 100%;
+  }
+
+  .tujuan {
+    text-align: center;
+    padding: 25px;
+  }
+
+  .tujuan ul {
+    text-align: left;
+    display: inline-block;
+  }
+}
+
+
+/* ======= kompetensi ======= */
+
+
+/* ======= Halaman Saran & Pesan ======= */
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 50px 80px;
+}
+
+.box {
+  flex: 1;
+  background-color: #ffe6f26b;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.box h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #fc74b4;
+}
+
+.box p {
+  line-height: 1.6;
+  text-align: justify;
+  color: #000; /* teks jadi hitam */
+}
+
+/* Kesimpulan Box */
+.kesimpulan-box {
+  max-width: 90%;
+  margin: 40px auto;
+  background-color: #ffe6f26b;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 120px;
+}
+
+.kesimpulan-box h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #fc74b4;
+}
+
+.kesimpulan-box p {
+  text-align: justify;
+  line-height: 1.6;
+  color: #000;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+}
+

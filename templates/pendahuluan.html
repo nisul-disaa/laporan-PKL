@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pendahuluan</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body class="pendahuluan-page"> 
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h2 class="logo">Laporan PKL</h2>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/pendahuluan" class="active">Pendahuluan</a></li>
+      <li><a href="/profil">Profil IDUKA</a></li>
+      <li><a href="/biodata">Biodata Siswa</a></li>
+      <li><a href="/kompetensi">Kompetensi</a></li>
+      <li><a href="/kesan">Kesan & Pesan</a></li>
+      <li><a href="/dokumentasi">Dokumentasi</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1>Pendahuluan</h1>
+    </div>
+  </section>
+  
+  <!-- Pendahuluan -->
+  <section class="pendahuluan" id="pendahuluan">
+    <div class="pendahuluan-container">
+                <div class="latarbelakang-text">
+            <h2>Latar Belakang 🌸</h2>  
+      <p>
+        Praktik Kerja Lapangan (PKL) merupakan salah satu kegiatan wajib bagi siswa Sekolah Menengah Kejuruan (SMK)
+        untuk mengembangkan kemampuan dan pengalaman kerja di dunia industri. Melalui kegiatan PKL, siswa dapat belajar
+        secara langsung mengenai bagaimana teori yang diperoleh di sekolah diterapkan dalam situasi kerja sebenarnya.
+      </p>
+
+      <p>
+        Kegiatan PKL ini menjadi sarana penting bagi siswa untuk melatih kedisiplinan, tanggung jawab, serta meningkatkan
+        keterampilan di bidangnya masing-masing. Selain itu, siswa juga diharapkan dapat menambah wawasan tentang budaya
+        kerja, komunikasi profesional, dan cara menghadapi tantangan dalam dunia kerja.
+      </p>
+      </div>
+    </div>
+
+    <!-- Tujuan & Manfaat -->
+    <div class="tujuan-manfaat-section">
+      <div class="tujuan-manfaat-container">
+        
+        <!-- Tujuan PKL -->
+        <div class="tujuan-section">
+          <div class="tujuan-text">
+            <h2>Tujuan PKL 🌸</h2>
+            <ul>
+              <li>Menambah wawasan dan pengalaman di dunia kerja nyata.</li>
+              <li>Meningkatkan kemampuan teknis dalam bidang Rekayasa Perangkat Lunak.</li>
+              <li>Menumbuhkan sikap profesional, tanggung jawab, dan kerja sama tim.</li>
+              <li>Menjadi bekal penting sebelum terjun ke dunia industri.</li>
+            </ul>
+          </div>
+          <div class="tujuan-img">
+            <img src="{{ url_for('static', filename='WhatsApp Image 2025-10-14 at 08.47.26.jpeg') }}" alt="Kegiatan PKL">
+          </div>
+        </div>
+
+        <!-- Manfaat PKL -->
+        <div class="manfaat-section">
+          <h2>Manfaat PKL 🌸</h2>
+          <p>
+            Melalui kegiatan ini, siswa dapat mengenal secara langsung lingkungan kerja, memahami alur pekerjaan profesional,
+            serta memperkuat kemampuan komunikasi dan problem solving. Dengan demikian, diharapkan hasil PKL dapat menjadi
+            bekal berharga untuk karier di masa depan.
+          </p>
+          <div class="manfaat-img">
+            <img src="{{ url_for('static', filename='WhatsApp Image 2025-10-14 at 09.12.04.jpeg') }}" alt="Manfaat PKL">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div class="footer-bar">
+    <p>BBPPMPV BOE Malang | Jl. Teluk Mandar, Arjosari, Kec. Blimbing, Kota Malang, Jawa Timur 65102 | Data Informatika</p>
+  </div>
+
+</body>
+</html>
