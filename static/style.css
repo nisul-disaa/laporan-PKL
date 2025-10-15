@@ -49,7 +49,7 @@ body {
 .hero {
   height: 100vh;
   width: 100%;
-  background: url("WhatsApp Image 2025-10-13 at 17.04.30.jpeg") no-repeat center center/cover;
+  background: url("e.jpeg") no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,15 +83,15 @@ body {
 
 /* 🔹 Hero Section Beda per Halaman */
 body.home-page .hero {
-  background-image: url("WhatsApp Image 2025-10-13 at 17.04.30.jpeg"); /* ganti sesuai file kamu */
+  background-image: url("e.jpeg"); /* ganti sesuai file kamu */
 }
 
 body.pendahuluan-page .hero {
-  background-image: url("WhatsApp Image 2025-10-13 at 17.04.21.jpeg");
+  background-image: url("d.jpeg");
 }
 
 body.biodata-page .hero {
-  background-image: url("WhatsApp Image 2025-10-13 at 17.05.20.jpeg");
+  background-image: url("f.jpeg");
 }
 
 body.kompetensi-page .hero {
@@ -103,11 +103,11 @@ body.kesan-page .hero {
 }
 
 body.dokumentasi-page .hero {
-  background-image: url("img/dokumentasi-bg.jpg");
+  background-image: url("c.jpeg");
 }
 
 body.profil-page .hero {
-  background-image: url("Landing_Page.jpeg");
+  background-image: url("a.jpeg");
 }
 
 /* ====== Biodata Siswa =======*/
@@ -566,39 +566,6 @@ body.profil-page .hero {
 
 
 /* ====== dokumentasi =======*/
-/* ===== HERO SECTION ===== */
-/* .hero {
-  position: relative;
-  background: url("../images/WhatsApp_Image_2025-10-14_at_12.43.12.jpeg") center/cover no-repeat;
-  height: 60vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-align: center;
-}
-
-.hero .overlay {
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.hero .content {
-  position: relative;
-  z-index: 2;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  font-size: 1.2rem;
-} */
-
-/* ===== GALLERY SECTION ===== */
 .gallery {
   padding: 50px 5%;
   background-color: #f4f4f4;
