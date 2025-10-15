@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+import os
 
 app = Flask(__name__)
 
@@ -30,5 +31,9 @@ def kesan():
 def dokumentasi():
     return render_template('dokumentasi.html')
 
+
 if __name__ == '__main__':
     app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))  # Railway kasih PORT
+    app.run(host='0.0.0.0', port=port)
+

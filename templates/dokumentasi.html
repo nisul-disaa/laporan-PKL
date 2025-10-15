@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dokumentasi PKL</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <nav class="navbar">
+    <h2 class="logo">Laporan PKL</h2>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/pendahuluan">Pendahuluan</a></li>
+      <li><a href="/profil">Profil IDUKA</a></li>
+      <li><a href="/biodata">Biodata Siswa</a></li>
+      <li><a href="/kompetensi">Kompetensi</a></li>
+      <li><a href="/kesan">Kesan & Pesan</a></li>
+      <li><a href="/dokumentasi">Dokumentasi</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1>Dokumentasi PKL</h1>
+      <p>Foto kenang-kenangan kegiatan selama praktik kerja lapang di BBPPMPV BOE Malang.</p>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <div class="container">
+        <img src="{{ url_for('static', filename='2.jpeg') }}" alt="Dokumentasi 2">
+        <img src="{{ url_for('static', filename='1.jpeg') }}" alt="Dokumentasi 1">
+        <img src="{{ url_for('static', filename='3.jpeg') }}" alt="Dokumentasi 3">
+        <img src="{{ url_for('static', filename='4.jpeg') }}" alt="Dokumentasi 4">
+        <img src="{{ url_for('static', filename='5.jpeg') }}" alt="Dokumentasi 5">
+        <img src="{{ url_for('static', filename='6.jpeg') }}" alt="Dokumentasi 6">
+        <img src="{{ url_for('static', filename='7.jpeg') }}" alt="Dokumentasi 7">
+        <img src="{{ url_for('static', filename='8.jpeg') }}" alt="Dokumentasi 8">
+        <img src="{{ url_for('static', filename='9.jpeg') }}" alt="Dokumentasi 9">
+        <img src="{{ url_for('static', filename='10.jpeg') }}" alt="Dokumentasi 10">
+        <img src="{{ url_for('static', filename='11.jpeg') }}" alt="Dokumentasi 11">
+        <img src="{{ url_for('static', filename='12.jpeg') }}" alt="Dokumentasi 12">
+    </div>
+  </section>
+
+</body>
+</html>
