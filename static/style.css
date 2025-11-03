@@ -501,7 +501,84 @@ body.profil-page .hero {
 }
 
 
-/* ======= kompetensi ======= */
+/* ======= Layout Konten Profil / Kompetensi ======= */
+.kompetensi {
+  max-width: 1100px;
+  margin: 60px auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  padding: 0 30px;
+}
+
+/* Gambar di kiri */
+.Kompetensi-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.Kompetensi-img img {
+  width: 115%;         /* sebelumnya 100%, sekarang lebih gede dikit */
+  max-width: 580px;    /* batas maksimal biar gak terlalu gede di layar lebar */
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  display: block;
+  margin: 0 auto;      /* biar tetap center di tengah */
+}
+
+
+/* Teks di kanan */
+.Kompetensi-text {
+  flex: 1.2;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.Kompetensi-text h2 {
+  font-size: 1.9rem;
+  color: #fc74b4;
+  margin-bottom: 15px;
+}
+
+.Kompetensi-text p {
+  color: #333;
+  font-size: 0.96rem;
+  margin-bottom: 15px;
+}
+
+/* ======= Footer ======= */
+.footer-bar {
+  background-color: #f7c8e0;
+  text-align: center;
+  padding: 12px 10px;
+  font-size: 0.9rem;
+  color: #333;
+  margin-top: 40px;
+  border-top: 1px solid #e2a7c5;
+}
+
+/* ======= Responsif (biar bagus di layar kecil) ======= */
+@media (max-width: 900px) {
+  .kompetensi {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .Kompetensi-img img {
+    width: 85%;
+  }
+
+  .Kompetensi-text {
+    text-align: justify;
+  }
+}
+
+
+
+
+
 
 
 /* ======= Halaman Saran & Pesan ======= */
